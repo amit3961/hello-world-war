@@ -10,4 +10,5 @@ RUN apt-get update \
         && echo "root:Docker!" | chpasswd \
         && chmod 755 /bin/init_container.sh 
 
-EXPOSE 80 1337ENTRYPOINT ["init_container.sh"]
+EXPOSE 80 1337
+ENTRYPOINT ["init_container.sh"]
