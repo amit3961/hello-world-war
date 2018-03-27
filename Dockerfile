@@ -1,5 +1,5 @@
 FROM 		tomcat:8.0.21-jre8
-ADD   https://jenkinsstore.blob.core.windows.net/javapp/hello-world (1).war  /usr/local/tomcat/webapps/hello-world (1).war
+ADD   https://jenkinsstore.blob.core.windows.net/javapp/hello-world.war  /usr/local/tomcat/webapps/hello-world.war
 COPY init_container.sh /bin/init_container.sh
 COPY sshd_config /etc/ssh/
 
