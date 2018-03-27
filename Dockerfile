@@ -1,5 +1,5 @@
 FROM 		tomcat:8.0.21-jre8
-ADD   https://jenkinsstorage12.blob.core.windows.net/javaapp/helloworld.war  /usr/local/tomcat/webapps/helloworld.war
+ADD   https://jenkinsstore.blob.core.windows.net/jenkins/dist/hello-world.war  /usr/local/tomcat/webapps/helloworld.war
 COPY init_container.sh /bin/init_container.sh
 COPY sshd_config /etc/ssh/
 
